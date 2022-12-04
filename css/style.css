@@ -39,6 +39,7 @@
     padding: 20px;
     position: relative;
 
+
 }
 
 .navbar-list li a {
@@ -67,20 +68,23 @@
 }
 
 .subnav {
-    top: 58px;
-    left: 0;
+    top: 60px;
+    left: -5px;
     display: none;
-    min-width: 150px;
+    min-width: 100px;
     position: absolute;
     background-color: var(black);
     color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     padding: 0;
+    text-align: center;
+
 }
 
 .subnav li {
     display: block;
     background-color: black;
+    padding: 0;
 }
 
 .logo {
@@ -164,10 +168,12 @@
 
 .btn-about-us {
     margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.btn-about-us button {
-    margin: 0 20px 0 0;
+.btn-about-us__item {
+    padding: 0 100px 0 0;
 }
 
 .our-products {
@@ -334,24 +340,29 @@
 }
 
 .slider {
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    background-image: url(/img/ourstory-img.webp);
     position: relative;
+    background-repeat: no-repeat;
 }
 
 .desc-img {
     display: block;
     padding: 0 640px;
     position: absolute;
-    top: 40%;
+    top: 30%;
     color: white;
     width: 100%;
     text-align: center;
-    font-size: 5rem;
+    font-size: 10rem;
 }
 
 .icon-slider {
 
     position: absolute;
-    top: 65%;
+    top: 70%;
     color: white;
     width: 100%;
     text-align: center;
@@ -359,8 +370,8 @@
 }
 
 
-.blog-content {
-    padding: 100px 0;
+.blog-content01 {
+    padding: 50px 0;
 }
 
 
@@ -829,7 +840,8 @@
 
     color: var(--black-color);
 }
-.product02{
+
+.product02 {
     padding: 100px 150px;
 }
 
@@ -838,8 +850,9 @@
 .productlist02 {
     padding: 0 250px 100px 250px;
 }
-.productlist02-item__link{
-}
+
+.productlist02-item__link {}
+
 .productlist02-item {
     transition: transform .2s;
     margin-bottom: 20px;
@@ -878,3 +891,51 @@
     font-weight: 700;
 }
 
+.blog-post {
+    padding: 50px 350px;
+}
+
+.blog-item {
+    padding: 0 150px;
+}
+
+.blog-post__title {
+    font-size: 5.5rem;
+    font-weight: 700;
+}
+
+.blog-post__desc {
+    font-size: 1.8rem;
+}
+
+.blog-thinking {
+    padding: 100px 300px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.blog-thinking__item {
+    padding: 0 100px;
+}
+
+.blog-thinking__para {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.blog-content {
+    padding: 50px 600px 100px 550px;
+
+}
+
+.blog-content__para {
+    display: block;
+    padding: 20px 0;
+    font-size: 2rem;
+}
+
+.blog-content__title {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    letter-spacing: 0.5rem;
+}
